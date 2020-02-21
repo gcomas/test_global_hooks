@@ -4,17 +4,20 @@ import { NavLink } from "react-router-dom"
 
 function Header(props) {
    return (
-      <Grid padded>
-         <Grid.Column textAlign="center">
-            <NavLink to="/" replace>
-               <Button color="orange">Login</Button>
+      <Grid padded="vertically">
+         <Grid.Column color="purple" textAlign="center">
+            <NavLink to="/">
+               <Button inverted basic content="Login"></Button>
             </NavLink>
-            <NavLink to="/index" replace>
-               <Button color="orange">Index</Button>
+            <NavLink to="/index">
+               <Button
+                  inverted
+                  basic
+                  content="Index"
+                  icon="heart"
+                  color="olive"
+               ></Button>
             </NavLink>
-            <Button onClick={props.toggleTheme} color="facebook">
-               Change Theme
-            </Button>
          </Grid.Column>
       </Grid>
    )

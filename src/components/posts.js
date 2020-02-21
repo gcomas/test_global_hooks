@@ -1,28 +1,13 @@
 import React from "react"
-import {
-   Message,
-   Grid,
-   Form,
-   Input,
-   Card,
-   Segment,
-   Button,
-   Item,
-   Icon,
-   Label,
-   Dimmer,
-   Loader,
-   List
-} from "semantic-ui-react"
+import { Grid, Card, Segment, List } from "semantic-ui-react"
 
 const Posts = ({ posts }) => {
-   console.log(posts)
    return (
       <div>
          {posts.map((post, id) => {
             return (
                <List.Item key={id}>
-                  <Card color="blue" fluid>
+                  <Card color="purple" fluid>
                      <Segment>
                         <Grid verticalAlign="middle">
                            <Grid.Column floated="left" mobile={16}>
